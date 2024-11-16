@@ -21,7 +21,7 @@ def submit():
         pass
     with open( path,'a',encoding="utf-8") as f:
         f.write('welcome'+'\n')
-    return  html.replace('<out/>',f'http://192.168.1.109:5000/{path}')
+    return  html.replace('<out/>',f'https://publicchat-9i7r.onrender.com/{path}')
 
 @app.route('/<string:filen>', methods=['GET','POST'])
 def do(filen):
