@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自製匿名聊天室</title>
+    <style>
+        body{
+            background-color: aqua;
+            color: black;
+        }
+        h1,h2{
+            text-align: center;
+        }
+        @media (max-width: 1800px){
+            #chat{
+                border: ridge black;
+                width: 1400px;
+            }
+        }
+        @media (max-width: 768px){
+            #chat{
+                border: ridge black;
+                width: 730px;
+            }
+        }
+        @media (max-width: 540px){
+            #chat{
+                border: ridge black;
+                width: 520px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>自製匿名聊天室</h1>
+    <h2>新增聊天室後將生成網址，生成後可以將網址重複使用。</h2>
+    <div style="text-align: center;">
+        <a href="/">生成聊天室</a>
+        <a href="/">about</a>
+    </div>
+    <div id="chat">
+        <p>時間為utc標準時間</p>
+        <out/>
+        <form action="" method="POST">
+            <label for="Input">匿名:</label>
+            <input type="text" id="name" name="username" required><br><br>
+            <label for="Input">輸入:</label>
+            <input type="text" id="name" name="input" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

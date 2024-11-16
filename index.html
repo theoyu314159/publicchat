@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自製匿名聊天室</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>自製匿名聊天室</h1>
+    <h2>新增聊天室後將生成網址，生成後可以將網址重複使用。</h2>
+    <div style="text-align: center;">
+        <a href="/">生成聊天室</a>
+        <a href="/">about</a>
+    </div>
+    <form action="/url" method="POST">
+        <label for="Url">聊天室名稱(英文):</label>
+        <input type="text" id="name" name="url" required><br><br>
+        <input type="submit" value="Submit">
+        <br>
+        <p>聊天室的網址:</p>
+        <out/>
+    </form>
+</body>
+</html>
